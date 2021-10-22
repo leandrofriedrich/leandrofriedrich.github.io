@@ -1,52 +1,24 @@
 <!DOCTYPE html>
 <html lang="de">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.3, user-scalable=yes">
-    <meta name="description" content="Das ist die index.html Datei aus dem SIFA Digital HTML Grundkurs.">
-    <meta name="keywords" content="html, grundkurs, tutorial, youtube, sifa digital">
-    
-    <title>Index - HTML Grundkurs</title>
-
 </head>
-
 <body>
-
-    <header>
-    
-        <ul>
-            <li> <a href="./index.html">Startseite</a> </li>
-            <li> <a href="./text-formatieren.html">Text formatieren</a> </li>
-            <li> <a href="./bilder-hinzufuegen.html">Bilder hinzufügen</a> </li>
-            <li> <a href="./links-erstellen.html">Links erstellen</a> </li>
-            <li> <a href="./listen-erstellen.html">Listen erstellen</a> </li>
-            <li> <a href="./tabellen-erstellen.html">Tabellen erstellen</a> </li>
-            <li> <a href="./formulare-erstellen.html">Formulare erstellen</a> </li>
-        </ul>
-    
-    </header>
-    
-    <div>
-        
-        <h1>Formulare erstellen</h1><br>
-        
-        <form method="post">
-            <label>Name:</label>
-            <input type="text" name="name"> <br>
-            <label>E-Mail:</label>
-            <input type="email" name="email" required> <br>
-            <label>Betreff:</label>
-            <input type="text" name="betreff"> <br>
-            <label>Nachricht:</label>
-            <textarea rows="7" name="nachricht" required></textarea> <br>
-            <button type="submit">Jetzt abschicken!</button>
-        </form>
-        
-    </div>
-    
-    <footer></footer>
-
+	<div>
+		<form>
+			  <select name="Anrede">
+    				<option>Herr</option>
+    				<option>Frau</option>
+    				<option selected="selected">Bitte wählen</option>
+  			  </select>
+  			<input name="name" type="text" value="Name" maxlength="255">
+			<input name="mail" type="text" value="Hier ihre E-Mail Addresse angeben, mit der ich sie erreichen kann." >
+			<textarea name="msg" cols="42" rows="6" id="msg">Nachricht</textarea>
+		</form>
+	</div>
 </body>
+
+
 
 </html>
